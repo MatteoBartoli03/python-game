@@ -32,6 +32,7 @@ class Fg:
     lightcyan='\033[96m'
 
 class Bg: 
+    lightgrey='\033[37m'
     rs="\033[00m"
     black='\033[40m'
     red='\033[41m'
@@ -99,6 +100,13 @@ class Entity:
 
                 if "move_to_room" in action:
                     player.change_room(self.game.rooms[action["move_to_room"]])
+
+                if action.get("interruttore", False) is not False:
+                    room_data = Game.config["rooms"][str(0)]
+                    if action.get("interruttore", False) == "-":
+                        self.game.config["rooms"]["0"]["color"] = "black"
+                    elif action.get("interruttore", False) =="+":
+                        self.game.config["rooms"]["0"]["color"] = "white"
 
                 if "game_over" in action:
                     self.game.game_over(action["game_over"])
@@ -258,7 +266,6 @@ class Room:
     def __init__(self, game, number, color, name, description):
         self.game = game
         self.number = number
-        self.color = getattr(Bg, color)
         self.name = name
         self.description = description
 
@@ -287,13 +294,15 @@ class Room:
     def draw(self):
         print(self.name)
         print(self.description)
+        print(Game.config)
+        color = getattr(Bg, Game.config["rooms"]["0"]["color"])
         for y in range(self.h):
             for x in range(self.w):
                 e = self.get_entity_at_coords(x, y)
                 if e:
                     print(e, end="")
                 else:
-                    print(self.color + "   " + Bg.rs, end="")
+                    print(color + "   " + Bg.rs, end="")
             print()
 
 

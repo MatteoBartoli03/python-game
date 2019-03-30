@@ -31,6 +31,18 @@
         "interactions": {
             "no-item": {
                 "message": "fa sempre comodo avere delle lasagne in tasca",
+                "transform": "H",
+                "pickup": true
+            }
+        }
+    },
+    "h": {
+        "name": "oggetto misterioso",
+        "description": "sembrano appetitose",
+        "color": "white",
+        "interactions": {
+            "no-item": {
+                "message": "fa sempre comodo averlo in tasca",
                 "transform": " ",
                 "pickup": true
             }
@@ -142,7 +154,7 @@
     "C": {
         "name": "candelabro",
         "description": "un vecchio candelabro arrugginito",
-        "color": "yellow",
+        "color": "lightgrey",
         "interactions": {
             "V": {
                 "message": "mmm, ha proprio senso... abra cadabra!",
@@ -193,7 +205,8 @@
         "interactions": {
             "no-item": { 
                 "message": "lo premi",
-                "transform": "-"
+                "transform": "-",
+                "interruttore": "-"
             }
         }
     },
@@ -205,7 +218,8 @@
         "interactions": {
             "no-item": { 
                 "message": "lo premi",
-                "transform": "+"
+                "transform": "+",
+                "interruttore": "+"
             }
         }  
     }
