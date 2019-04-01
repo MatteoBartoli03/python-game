@@ -206,7 +206,7 @@
             "no-item": { 
                 "message": "lo premi",
                 "transform": "-",
-                "interruttore": "-"
+                "switch": "+"
             }
         }
     },
@@ -219,7 +219,7 @@
             "no-item": { 
                 "message": "lo premi",
                 "transform": "+",
-                "interruttore": "+"
+                "switch": "-"
             }
         }  
     }

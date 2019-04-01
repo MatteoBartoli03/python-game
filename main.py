@@ -101,11 +101,11 @@ class Entity:
                 if "move_to_room" in action:
                     player.change_room(self.game.rooms[action["move_to_room"]])
 
-                if action.get("interruttore", False) is not False:
+                if action.get("switch", False) is not False:
                     room_data = Game.config["rooms"][str(0)]
-                    if action.get("interruttore", False) == "-":
+                    if action.get("switch", False) == "-":
                         self.game.config["rooms"]["0"]["color"] = "black"
-                    elif action.get("interruttore", False) =="+":
+                    elif action.get("switch", False) =="+":
                         self.game.config["rooms"]["0"]["color"] = "white"
 
                 if "game_over" in action:
@@ -294,7 +294,6 @@ class Room:
     def draw(self):
         print(self.name)
         print(self.description)
-        print(Game.config)
         color = getattr(Bg, Game.config["rooms"]["0"]["color"])
         for y in range(self.h):
             for x in range(self.w):
