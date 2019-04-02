@@ -102,11 +102,12 @@ class Entity:
                     player.change_room(self.game.rooms[action["move_to_room"]])
 
                 if action.get("switch", False) is not False:
+                    current_room = self.game.get_current_room().number
                     room_data = Game.config["rooms"][str(0)]
                     if action.get("switch", False) == "-":
-                        self.game.config["rooms"]["0"]["color"] = "black"
+                        self.game.config["rooms"][str(current_room)]["color"] = "black"
                     elif action.get("switch", False) =="+":
-                        self.game.config["rooms"]["0"]["color"] = "white"
+                        self.game.config["rooms"][str(current_room)]["color"] = self.room.from_color    
 
                 if "game_over" in action:
                     self.game.game_over(action["game_over"])
@@ -187,6 +188,7 @@ class Game:
     config = {}
     for key in ("entities", "rooms", "game"):
         file = open("./config/{}.json".format(key))
+        print(file)
         config[key] = json.load(file)
         file.close()
 
@@ -268,6 +270,7 @@ class Room:
         self.number = number
         self.name = name
         self.description = description
+        self.from_color = color
 
         file = open("./config/{}.room".format(number))
         rows = file.readlines()
@@ -294,7 +297,8 @@ class Room:
     def draw(self):
         print(self.name)
         print(self.description)
-        color = getattr(Bg, Game.config["rooms"]["0"]["color"])
+        current_room = self.game.get_current_room().number
+        color = getattr(Bg, Game.config["rooms"][str(current_room)]["color"])
         for y in range(self.h):
             for x in range(self.w):
                 e = self.get_entity_at_coords(x, y)
