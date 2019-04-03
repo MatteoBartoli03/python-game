@@ -42,6 +42,7 @@ class Bg:
     magenta='\033[45m'
     cyan='\033[46m'
     white='\033[47m'
+    orange='\033[33m'
 
 
 class Directions:

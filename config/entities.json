@@ -6,7 +6,7 @@
         "interactions": {
             "no-item": {
                 "message": "si apre",
-                "move_to_room": 0,
+                "move_to_room": 0
             }
         }
     },
@@ -74,6 +74,7 @@
         "interactions": {
             "no-item": {
                 "message": "fa sempre comodo averlo in tasca",
+                "transform": " ",
                 "pickup": true
             }
         }
@@ -88,7 +89,7 @@
                 "game_over": "la bomba esplode demolendo l'intera stanza"
             },
 
-            "V": {
+            "T": {
                 "message": "tagli con attenzione un filo che penzola da un lato dell'ordigno...",
                 "win": "hai disinnescato la bomba con successo, sei sano e salvo!"
             }
@@ -132,7 +133,7 @@
     "S": {
         "name" : "sporcizia",
         "description" : "questo posto è proprio trascurato",
-        "color" : "lightgrey",
+        "color" : "orange",
         "interactions" : {
             "M" : {
                 "message": "bravo bravo pulisci che ti fa bene",
@@ -181,13 +182,14 @@
         }
     },
     "R": {
-        "name": "porta del ripostiglio",
-        "description": "chissà cosa c'è in questa ripostiglio..",
-        "color" : "red", 
-        "interactions" : {
-            "F" :{
-                "message" : "apri la serratura come un abile scassinatore",
-                "trasform" : "3"
+        "name": "mocio",
+        "description": "ti potrebbe risultare utile questo bellissimo mocio..",
+        "color": "red",
+        "interactions": {
+            "F": {
+                "message": "lo raccogli",
+                "transform": "3",
+                "remove_from_inventory": true
             }
         }
     }
