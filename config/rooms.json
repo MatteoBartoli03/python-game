@@ -1,25 +1,25 @@
 {
     "0": {
-        "name": "Sala",
-        "description": "Questo luogo e' abbastanza accogliente nonostante il senso di claustrofobia che ti trasmette",
+        "name": "Sala principale di una discoteca..",
+        "description": "e' una stanza grande ma un po' dispersiva",
         "color": "white"
     },
 
     "1": {
-        "name": "Cucina",
-        "description": "E' tutto molto disordinato. Sembra che nessuno abbia riordinato da molto tempo",
-        "color": "red"
+        "name": "Sala riservata agli addetti",
+        "description": "piccola e non molto accogliente ",
+        "color": "white"
     },
     
     "2": {
-        "name": "Sogno",
-        "description": "sei evidentemente in un sogno",
-        "color": "magenta"
+        "name": "Scantinato",
+        "description": "Stanza piena di casse di alcolici e cianfrusaglie varie..",
+        "color": "white"
     },
     
     "3": {
-        "name": "sgabuzzino",
-        "description": "sciao",
-        "color": "magenta"
+        "name": "Sgabuzzino",
+        "description": "Questa stanza è veramente piccola e angusta..",
+        "color": "white"
     }
 }

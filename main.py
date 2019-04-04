@@ -189,7 +189,6 @@ class Game:
     config = {}
     for key in ("entities", "rooms", "game"):
         file = open("./config/{}.json".format(key))
-        print(file)
         config[key] = json.load(file)
         file.close()
 
