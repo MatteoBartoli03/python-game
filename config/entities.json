@@ -46,7 +46,7 @@
     "S" : {
         "name": "serratura",
         "description": "della porta che ti collega allo stanza degli addetti",
-        "color": "red",
+        "color": "cyan",
         "interactions": {
             "J": {
                 "message": "la key card riesce perfettamente ad sbloccare la serratura",
@@ -58,7 +58,7 @@
     "L" : {
         "name": "lucchetto",
         "description": "della porta che ti collega allo Scantinato",
-        "color": "red",
+        "color": "cyan",
         "interactions": {
             "K": {
                 "message": "la chiave entra perfettamente nella serratura e la porta si apre",
@@ -118,7 +118,7 @@
     "Q": {
         "name": "quadro",
         "description": "e' proprio un bel quadro",
-        "color": "red",
+        "color": "magenta",
         "interactions": {
             "no-item": {
                 "message": "spostando il quadro ti accorgi che dietro nasconte una chiave",
@@ -129,7 +129,7 @@
     "T": {
         "name": "tenaglie",
         "description": "sono piuttosto affilate, chissà a cosa serviranno",
-        "color": "red",
+        "color": "green",
         "interactions": {
             "no-item": {
                 "message": "le raccogli stando attento a non farti male",
@@ -139,9 +139,9 @@
         }
     },
     "R": {
-        "name": "rum",
-        "description": "cassa di rum...",
-        "color": "green",
+        "name": "liquore",
+        "description": "cassa di liquore...",
+        "color": "red",
         "interactions": {
             "no-item": {
                 "message": "spostando la cassa noti qualcosa di interessante",
@@ -149,10 +149,20 @@
             }
         }
     },
+    "E": {
+        "name": "cassa di bottiglie",
+        "description": "piena di bottiglia vuote",
+        "color": "red"
+    },
+    "Z": {
+        "name": "TV",
+        "description": "inutilizzata da molto",
+        "color": "yellow"
+    },
     "H": {
         "name" : "sporcizia",
         "description" : "è di casa in questa stanza",
-        "color" : "red",
+        "color" : "darkgray",
         "interactions" : {
             "M" : {
                 "message": "bravo bravo pulisci che ti fa bene",
@@ -164,7 +174,7 @@
     "M": {
         "name": "mocio",
         "description": "oggetto apparentemente inutile",
-        "color": "red",
+        "color": "cyan",
         "interactions": {
             "no-item": {
                 "message": "lo raccogli",
@@ -176,7 +186,7 @@
     "F": {
         "name": "fogne",
         "description": "tubature fognarie.",
-        "color": "red",
+        "color": "black",
         "interactions": {
             "V": {
                 "message": "posizioni le assi di legno ma manca qualcosa",
@@ -188,7 +198,7 @@
     "I": {
         "name": "assi di legno appoggiate per terra",
         "description": "sono fissate in modo molto precario, meglio non rischiare",
-        "color": "red",
+        "color": "yellow",
         "interactions": {
             "C": {
                 "message": "fissi le assi e così il pavimento torna stabile",
@@ -200,7 +210,7 @@
     "V": {
         "name": "assi",
         "description": "di legno massiccio",
-        "color": "red",
+        "color": "yellow",
         "interactions": {
             "no-item": {
                 "message": "le raccogli e le metti nello zaino",
@@ -212,7 +222,7 @@
     "C": {
         "name": "chiodi di ferro",
         "description": "appuntiti e resistenti",
-        "color": "red",
+        "color": "darkgray",
         "interactions": {
             "no-item": {
                 "message": "li raccogli e li metti nello zaino",
@@ -239,7 +249,7 @@
     "D": {
         "name": "poltrona",
         "description": "molto comoda",
-        "color" : "red",
+        "color" : "lightred",
         "interactions" : {
             "message" : "evitiamo di perdere tempo.."
         }

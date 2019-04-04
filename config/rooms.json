@@ -5,13 +5,13 @@
         "color": "white"
     },
 
-    "1": {
+    "2": {
         "name": "Sala riservata agli addetti",
         "description": "piccola e non molto accogliente ",
         "color": "white"
     },
     
-    "2": {
+    "1": {
         "name": "Scantinato",
         "description": "Stanza piena di casse di alcolici e cianfrusaglie varie..",
         "color": "white"

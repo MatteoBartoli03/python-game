@@ -30,9 +30,9 @@ class Fg:
     lightblue='\033[94m'
     pink='\033[95m'
     lightcyan='\033[96m'
+    white='\033[97m'
 
-class Bg: 
-    lightgrey='\033[37m'
+class Bg:
     rs="\033[00m"
     black='\033[40m'
     red='\033[41m'
@@ -41,9 +41,15 @@ class Bg:
     blue='\033[44m'
     magenta='\033[45m'
     cyan='\033[46m'
-    white='\033[47m'
-    orange='\033[33m'
-
+    lightgray='\033[47m'
+    darkgray='\033[100m'
+    lightred='\033[101m'
+    lightgreen='\033[102m'
+    lightyellow='\033[103m'
+    lightblue='\033[104m'
+    lightmagenta='\033[105m'
+    lightcyan='\033[106m'
+    white='\033[107m'
 
 class Directions:
     N = 0
