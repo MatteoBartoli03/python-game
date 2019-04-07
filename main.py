@@ -108,9 +108,9 @@ class Entity:
                 if "move_to_room" in action:
                     player.change_room(self.game.rooms[action["move_to_room"]])
 
-                if action.get("switch", False) is not False:
+                if action.get("switch", False):
                     current_room = self.game.get_current_room().number
-                    room_data = Game.config["rooms"][str(0)]
+                    room_data = Game.config["rooms"][str(current_room)]
                     if action.get("switch", False) == "-":
                         self.game.config["rooms"][str(current_room)]["color"] = "black"
                     elif action.get("switch", False) =="+":
@@ -305,11 +305,27 @@ class Room:
         print(self.description)
         current_room = self.game.get_current_room().number
         color = getattr(Bg, Game.config["rooms"][str(current_room)]["color"])
+
+        night = False
+        for e in self.entities:
+            if e.graphic == "+":
+                night = True
+
         for y in range(self.h):
             for x in range(self.w):
                 e = self.get_entity_at_coords(x, y)
                 if e:
-                    print(e, end="")
+                    entity_night = False
+                    if e.interactions:
+                        entity_night = e.interactions.get("night")
+                        
+                    if entity_night and night:
+                        print(e, end="")
+                    elif not entity_night:
+                        print(e, end="")
+                    else:
+                        print(color + "   " + Bg.rs, end="")
+
                 else:
                     print(color + "   " + Bg.rs, end="")
             print()

@@ -157,7 +157,12 @@
     "Z": {
         "name": "TV",
         "description": "inutilizzata da molto",
-        "color": "yellow"
+        "color": "yellow",
+        "interactions": {
+            "no-item": {
+                "message": "Non sembra accendersi, è troppo vecchia.."
+            }
+        }
     },
     "H": {
         "name" : "sporcizia",
@@ -212,6 +217,7 @@
         "description": "di legno massiccio",
         "color": "yellow",
         "interactions": {
+            "night": true,
             "no-item": {
                 "message": "le raccogli e le metti nello zaino",
                 "transform": " ",
@@ -246,12 +252,15 @@
             }
         }
     },
-    "D": {
+    "P": {
         "name": "poltrona",
         "description": "molto comoda",
         "color" : "lightred",
         "interactions" : {
-            "message" : "evitiamo di perdere tempo.."
+            "no-item": {
+                "message" : "Hai mangiato troppe lasagne, sfondi la poltrona.",
+                "transform": " "
+            }
         }
     }
 }
