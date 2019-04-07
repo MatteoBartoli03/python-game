@@ -256,7 +256,7 @@
     "P": {
         "name": "poltrona",
         "description": "molto comoda",
-        "color" : "lightred",
+        "color" : "darkgray",
         "interactions" : {
             "no-item": {
                 "message" : "hai mangiato troppe lasagne, sfondi la poltrona.",
