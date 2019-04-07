@@ -5,7 +5,7 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "si apre senza troppe difficoltà..",
+                "message": "si apre senza troppe difficolta'..",
                 "move_to_room": 0
             }
         }
@@ -27,7 +27,7 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "la porta ora si è aperta facilmente",
+                "message": "la porta ora si e' aperta facilmente",
                 "move_to_room": 2
             }
         }
@@ -73,7 +73,7 @@
         "color": "red",
         "interactions": {
             "no-item": {
-                "message": "prendiamola... chissà se ci servirà",
+                "message": "prendiamola... chissa' se ci servira'",
                 "transform": " ",
                 "pickup": true
             }
@@ -116,10 +116,11 @@
         }  
     },
     "Q": {
-        "name": "quadro",
-        "description": "e' proprio un bel quadro",
+        "name": "tela",
+        "description": "dipinta con vernice fluorescente, invisibile alla luce",
         "color": "magenta",
         "interactions": {
+            "night": true,
             "no-item": {
                 "message": "spostando il quadro ti accorgi che dietro nasconte una chiave",
                 "transform": "K"
@@ -128,7 +129,7 @@
     },
     "T": {
         "name": "tenaglie",
-        "description": "sono piuttosto affilate, chissà a cosa serviranno",
+        "description": "sono piuttosto affilate: chissa' a cosa serviranno",
         "color": "green",
         "interactions": {
             "no-item": {
@@ -160,13 +161,13 @@
         "color": "yellow",
         "interactions": {
             "no-item": {
-                "message": "Non sembra accendersi, è troppo vecchia.."
+                "message": "Non sembra accendersi, e' troppo vecchia.."
             }
         }
     },
     "H": {
         "name" : "sporcizia",
-        "description" : "è di casa in questa stanza",
+        "description" : "e' di casa in questa stanza",
         "color" : "darkgray",
         "interactions" : {
             "M" : {
@@ -213,8 +214,8 @@
         }
     },
     "V": {
-        "name": "assi",
-        "description": "di legno massiccio",
+        "name": "assi di legno",
+        "description": "sembrano molto resistenti",
         "color": "yellow",
         "interactions": {
             "night": true,

@@ -1,13 +1,13 @@
 {
     "0": {
-        "name": "Sala principale di una discoteca..",
-        "description": "e' una stanza grande ma un po' dispersiva",
+        "name": "Sala principale di una discoteca",
+        "description": "E' una stanza grande ma un po' dispersiva",
         "color": "white"
     },
 
     "2": {
         "name": "Sala riservata agli addetti",
-        "description": "piccola e non molto accogliente ",
+        "description": "Piccola e non molto accogliente ",
         "color": "white"
     },
     
@@ -19,7 +19,7 @@
     
     "3": {
         "name": "Sgabuzzino",
-        "description": "Questa stanza è veramente piccola e angusta..",
+        "description": "Ha un aria cosi' misteriosa, sarebbe il luogo perfetto per nascondere qualcosa",
         "color": "white"
     }
 }
