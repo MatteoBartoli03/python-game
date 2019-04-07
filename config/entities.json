@@ -5,7 +5,7 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "si apre senza troppe difficolta'..",
+                "message": "si apre senza troppe difficolta'...",
                 "move_to_room": 0
             }
         }
@@ -27,7 +27,7 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "la porta ora si e' aperta facilmente",
+                "message": "la porta ora si e' aperta facilmente...",
                 "move_to_room": 2
             }
         }
@@ -45,11 +45,11 @@
     },
     "S" : {
         "name": "serratura",
-        "description": "della porta che ti collega allo stanza degli addetti",
+        "description": "sbloccandola potrai aprire la porta che ti collega alla stanza degli addetti",
         "color": "cyan",
         "interactions": {
             "J": {
-                "message": "la key card riesce perfettamente ad sbloccare la serratura",
+                "message": "la key card riesce perfettamente a sbloccare la serratura",
                 "transform": "1",
                 "remove_from_inventory": true
             }
@@ -57,7 +57,7 @@
     },
     "L" : {
         "name": "lucchetto",
-        "description": "della porta che ti collega allo Scantinato",
+        "description": "aprednolo potrai accedere allo Scantinato",
         "color": "cyan",
         "interactions": {
             "K": {
@@ -259,7 +259,7 @@
         "color" : "lightred",
         "interactions" : {
             "no-item": {
-                "message" : "Hai mangiato troppe lasagne, sfondi la poltrona.",
+                "message" : "hai mangiato troppe lasagne, sfondi la poltrona.",
                 "transform": " "
             }
         }
