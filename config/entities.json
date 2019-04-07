@@ -213,12 +213,23 @@
             }
         }
     },
+    "U": {
+        "name": "telo bianco",
+        "description": "dipinto con vernice fluorescente, invisibile alla luce",
+        "color": "white",
+        "interactions": {
+            "night": true,
+            "no-item": {
+                "message": "sollevando il telo ti accorgi che nasconde qualcosa",
+                "transform": "V"
+            }
+        }
+    },
     "V": {
         "name": "assi di legno",
         "description": "sembrano molto resistenti",
         "color": "yellow",
         "interactions": {
-            "night": true,
             "no-item": {
                 "message": "le raccogli e le metti nello zaino",
                 "transform": " ",
