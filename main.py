@@ -110,7 +110,6 @@ class Entity:
 
                 if action.get("switch", False):
                     current_room = self.game.get_current_room().number
-                    room_data = Game.config["rooms"][str(current_room)]
                     if action.get("switch", False) == "-":
                         self.game.config["rooms"][str(current_room)]["color"] = "black"
                     elif action.get("switch", False) =="+":
