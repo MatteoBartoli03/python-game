@@ -3,14 +3,14 @@ from os import system
 from random import choice
 import sys
 
-WRONG_INTERACTION_RESPONSES = [
+WRONG_INTERACTION_RESPONSES = (
     "non succede nulla",
     "non funziona",
     "niente da fare",
     "non credo sia la cosa giusta da fare",
     "non credo proprio",
     "non e'il caso"
-]
+)
 IS_WINDOWS = sys.platform.lower() == "win32"
 
 class Fg: 
